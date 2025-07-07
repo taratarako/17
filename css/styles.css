@@ -190,4 +190,11 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+
+    .floating {
+        position: fixed;
+        left: 20px;
+        bottom: 40px;
+        z-index: 1000;
+    }
 }
