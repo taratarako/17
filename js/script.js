@@ -8,39 +8,38 @@ $(function () {
         $(this).toggleClass('active');
     });
 
-    // トップへ戻るボタン（シンプルなデザイン）
+    // トップへ戻るボタン
     const $toTopBtn = $('<button>', {
-        id: 'toTopBtn',
-        text: 'トップへ戻る'
+        class: 'floating-button',
+        text: 'トップに戻る'
     }).css({
         position: 'fixed',
         right: '20px',
         bottom: '20px',
-        padding: '15px',
-        background: '#333',
+        padding: '10px 20px',
+        background: '#4aa5f0',
         color: '#fff',
         border: 'none',
-        fontSize: '14px',
+        borderRadius: '5px',
+        fontSize: '16px',
         cursor: 'pointer',
         zIndex: 1000,
         display: 'none',
-        opacity: 0.7
+        boxShadow: '0 2px 4px rgba(0,0,0,0.2)'
     }).appendTo('body');
 
     // スクロールイベント
     $(window).scroll(function () {
-        // ボタンの表示/非表示
         if ($(window).scrollTop() > 100) {
             $toTopBtn.fadeIn();
+            // スクロールに合わせてボタンを追従
+            $toTopBtn.stop().animate(
+                {bottom: Math.max(20, $(window).height() - $(window).scrollTop() - 100)},
+                500
+            );
         } else {
             $toTopBtn.fadeOut();
         }
-        
-        // スクロールに合わせてボタンを追従
-        $toTopBtn.stop().animate(
-            {"top": $(window).scrollTop() + $(window).height() - 100},
-            500
-        );
     });
 
     // クリックイベント
