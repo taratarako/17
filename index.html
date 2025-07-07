@@ -1,63 +1,39 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>名城大学情報工学部非公式HP</title>
-        <meta name="description" content="名城大学情報工学部非公式HP">
-        <meta name="viewport" content="width=device-width">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="js/script.js"></script>
-        <link href="css/index.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">    
-    </head>
-    <body>
-        <header class="header">
-            <div class="header-inner">
-                <a class="header-logo" href="index.html">
-                    <img src="images/common/logo.png" alt="ロゴ">
-                </a>
-                <button class="toggle-menu-button"></button>
-                <div class="header-site-menu">
-                    <nav class="site-menu">
-                        <ul>
-                            <li><a href="concept.html">コンセプト</a></li>
-                            <li><a href="members.html">メンバー</a></li>
-                            <li><a href="access.html">アクセス</a></li>
-                        </ul>
-                    </nav>
-                </div>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>名城大学周辺おすすめ飲食店</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>名城大学周辺の飲食店</h1>
+    </header>
+    <main>
+        <div class="restaurant-grid">
+            <div class="restaurant-card">
+                <img src="paseri.jpg" alt="洋食工房パセリ">
+                <h2>洋食工房パセリ</h2>
+                <p>とんかつを中心とした洋食店</p>
+                <a href="paseri.html" class="btn">詳細を見る</a>
             </div>
-        </header>
-        <main class="main">
-            <nav class="floating">
-                <ul>
-                    <li><a href="#">トップ</a></li>
-                </ul>
-            </nav>
-            <div class="first-view">
-                <div class="first-view-text">
-                    <h1>名城大学情報工学部</h1>
-                    <p>想像以上を，創造しよう．</p>
-                    <div class="lead">
-                        <p>先進プロジェクトコースと情報工学総合コースを完備</p>
-                    </div>
-                </div>
+            <div class="restaurant-card">
+                <img src="shinya.jpg" alt="親和">
+                <h2>親和</h2>
+                <p>こだわりの蕎麦店</p>
+                <a href="shinya.html" class="btn">詳細を見る</a>
             </div>
-        </main>
-        <footer class="footer">
-            <nav class="site-menu">
-                <ul>
-                    <li><a href="concept.html">コンセプト</a></li>
-                    <li><a href="members.html">メンバー</a></li>
-                    <li><a href="access.html">アクセス</a></li>
-                </ul>
-            </nav>
-            <a class="footer-logo" href="index.html">
-                <img src="images/common/logo_footer.png" alt="ロゴ">
-            </a>
-            <p class="copyright"><small>&copy;名城大学情報工学部(嘘)</small></p>
-        </footer>
-    </body>
+            <div class="restaurant-card dummy">
+                <img src="dummy.jpg" alt="ダミー店舗">
+                <h2>ダミー店舗</h2>
+                <p>近日オープン予定</p>
+                <a href="#" class="btn">準備中</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2025 名城大学周辺飲食店ガイド</p>
+    </footer>
+</body>
 </html>
