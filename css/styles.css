@@ -91,6 +91,9 @@ header {
     padding: 10px;
     text-align: center;
 }
+.restaurant-card p {
+    text-align: center;
+}
 
 .btn {
     display: block;
