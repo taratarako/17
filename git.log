@@ -1,0 +1,38 @@
+commit 277d271226f5ff04b05079a63055d500deda5f83
+Merge: 10370b3 3cb1aa8
+Author: 柴田泰良 <185112097+taratarako@users.noreply.github.com>
+Date:   Mon May 26 14:13:11 2025 +0900
+
+    Merge branch 'main' of https://github.com/taratarako/20250526_089
+
+commit 10370b33a223cd01b24d4038aeb6b44d61998b2f
+Author: 柴田泰良 <185112097+taratarako@users.noreply.github.com>
+Date:   Mon May 26 14:09:52 2025 +0900
+
+    ブルーをスカイブルーに
+
+commit 3cb1aa8d6b8a59566fd2d9ab705bf70e4a309f8c
+Author: 柴田泰良 <185112097+taratarako@users.noreply.github.com>
+Date:   Mon May 26 14:07:48 2025 +0900
+
+    ピースの色変更
+    
+    シアンをスカイブルーに変更
+
+commit 1ddff602f51ed2ee56ac35c109d1bcf572612fe3
+Author: 柴田泰良 <185112097+taratarako@users.noreply.github.com>
+Date:   Mon May 26 14:02:59 2025 +0900
+
+    ピースの落下速度の減少
+
+commit 032bc4ee64a66c12b73aab45b2414e47738b0351
+Author: 柴田泰良 <185112097+taratarako@users.noreply.github.com>
+Date:   Mon May 26 13:52:32 2025 +0900
+
+    greenをlimeに
+
+commit a5b0125ff7ecad72a14b902e248dcf1c7b25c43f
+Author: 柴田泰良 <185112097+taratarako@users.noreply.github.com>
+Date:   Mon May 26 13:38:46 2025 +0900
+
+    ソースコードのインポート
