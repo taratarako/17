@@ -14,7 +14,7 @@ $(function () {
         text: 'トップに戻る'
     }).css({
         position: 'fixed',
-        right: '20px',
+        left: '20px', 
         bottom: '20px',
         padding: '10px 20px',
         background: '#4aa5f0',
