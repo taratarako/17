@@ -52,11 +52,24 @@ header {
     justify-content: center;
     color: #fff;
     margin-bottom: 30px;
+    background-color: #f8f9fa;
+    padding: 60px 0;
+    text-align: center;
 }
 
 .first-view-text {
     text-align: center;
     text-shadow: 1px 1px 10px #4b2c14;
+}
+
+.first-view-text h2 {
+    font-size: 32px;  
+    margin-bottom: 20px;
+}
+
+.first-view-text p {
+    font-size: 18px;
+    color: #ffffff;
 }
 
 .restaurant-grid {
@@ -146,6 +159,30 @@ footer {
     left: 20px;
     color: white;
     text-decoration: none;
+}
+
+
+.floating {
+    position: fixed;
+    left: 40px;
+    bottom: 40px;
+    z-index: 1000;
+}
+
+.floating ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.floating a {
+    display: block;
+    padding: 10px 20px;
+    background: #4aa5f0;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
 @media (max-width: 600px) {

@@ -8,43 +8,26 @@ $(function () {
         $(this).toggleClass('active');
     });
 
-    // トップへ戻るボタン
-    const $toTopBtn = $('<button>', {
-        class: 'floating-button',
-        text: 'トップに戻る'
-    }).css({
-        position: 'fixed',
-        left: '20px', 
-        bottom: '20px',
-        padding: '10px 20px',
-        background: '#4aa5f0',
-        color: '#fff',
-        border: 'none',
-        borderRadius: '5px',
-        fontSize: '16px',
-        cursor: 'pointer',
-        zIndex: 1000,
-        display: 'none',
-        boxShadow: '0 2px 4px rgba(0,0,0,0.2)'
-    }).appendTo('body');
+    // 上へボタンを動的に追加
+    if (!$('nav.floating').length) {
+        const $toTopNav = $('<nav>', {
+            class: 'floating'
+        }).appendTo('main');
 
-    // スクロールイベント
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > 100) {
-            $toTopBtn.fadeIn();
-            // スクロールに合わせてボタンを追従
-            $toTopBtn.stop().animate(
-                {bottom: Math.max(20, $(window).height() - $(window).scrollTop() - 100)},
-                500
+        $('<ul>').appendTo($toTopNav)
+            .append(
+                $('<li>').append(
+                    $('<a>', {
+                        href: '#',
+                        text: '上へ'
+                    })
+                )
             );
-        } else {
-            $toTopBtn.fadeOut();
-        }
-    });
+    }
 
     // クリックイベント
-    $toTopBtn.click(function () {
+    $(document).on('click', 'nav.floating a', function(e) {
+        e.preventDefault();
         $('html, body').animate({scrollTop: 0}, 400);
-        return false;
     });
 });
