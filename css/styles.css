@@ -46,12 +46,25 @@ header {
 
 .first-view {
     height: 250px;
-    background: linear-gradient(120deg, #3498db 0%, #8e44ad 100%);
+    /* グラデーションの背景指定を削除またはコメントアウト */
+    /* background: linear-gradient(120deg, #3498db 0%, #8e44ad 100%); */
+
+    /* 画像の背景指定を追加 */
+    background-image: url('../images/main.png'); /* 'sample.png' が images フォルダにあると仮定 */
+    background-size: cover; /* 要素全体を覆うように画像を拡大縮小 */
+    background-position: center 35%; /* 画像を中央に配置 */
+    background-repeat: no-repeat; /* 画像を繰り返さない */
+
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: #121111;
     margin-bottom: 30px;
+}
+
+.first-view-text {
+    text-align: center;
+    text-shadow: 1px 1px 10px #080808;
 }
 
 .first-view-text {
