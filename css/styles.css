@@ -167,3 +167,13 @@ footer {
         align-items: center;
     }
 }
+
+.map h2 {
+    text-align: center; 
+    margin-bottom: 15px;
+}
+.map iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
