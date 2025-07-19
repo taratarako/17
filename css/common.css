@@ -31,6 +31,52 @@ header {
     font-family: inherit;
 }
 
+.first-view {
+    height: 250px;
+    /* もともとのグラデーションの背景指定をコメントアウト */
+    /* background: linear-gradient(120deg, #3498db 0%, #8e44ad 100%); */
+
+    /* 画像の背景指定を追加 */
+    background-image: url('../images/irasuto.jpeg');
+    background-size: cover; /* 要素全体を覆うように画像を拡大縮小 */
+    background-position: center 55%; /* 画像を中央に配置 */
+    background-repeat: no-repeat; /* 画像を繰り返さない */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #121111;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.first-view-text {
+    text-align: center;
+}
+
+.first-view-text {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    padding: 10px 10px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    backdrop-filter: blur(3px);
+    display: inline-block;
+    margin: 40px auto;
+}
+
+.first-view-text h2 {
+    font-size: 32px;  
+    margin-bottom: 20px;
+}
+
+.first-view-text p {
+    font-size: 18px;
+    color: #000000;
+    /*color: #ffffff; */ /* 文字色の白バージョン */
+}
+
 .site-menu ul {
     display: flex;
     gap: 20px;
@@ -81,6 +127,24 @@ footer {
     text-decoration: none;
     border-radius: 5px;
     font-size: 16px;
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.back-btn {
+    position: absolute;
+    left: 20px;
+    color: white;
+    text-decoration: none;
 }
 
 @media (max-width: 600px) {
