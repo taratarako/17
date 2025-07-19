@@ -166,4 +166,9 @@ footer {
         gap: 0px;
     }
 
+    .site-menu ul {
+        width: 60px;
+        align-items: center;
+    }
+
 }
