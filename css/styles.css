@@ -33,7 +33,6 @@ header {
 
 .site-menu ul {
     display: flex;
-    gap: 20px;
     list-style: none;
 }
 
@@ -245,8 +244,9 @@ footer {
     }
 
     .site-menu {
-        width : 100px;
+        width : 60px;
         text-align: right;
+        margin-right: 0px;
     }
 }
 
