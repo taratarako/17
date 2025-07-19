@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Yu Gothic', 'Meiryo', 'Hiragino Kaku Gothic ProN', 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #24211b;
+    color: #fff;
+    padding: 0;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    font-size: 2rem;
+    font-family: inherit;
+}
+
+.site-menu ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.site-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Cherry Bomb One', cursive;
+}
+
+footer {
+    background-color: #24211b;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0 15px 0;
+    position: static;
+    width: 100%;
+}
+
+.copyright {
+    font-size: 14pt;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+.floating {
+    position: fixed;
+    left: 40px;
+    bottom: 40px;
+    z-index: 1000;
+}
+
+.floating ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.floating a {
+    display: block;
+    padding: 10px 20px;
+    background: #4aa5f0;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+@media (max-width: 600px) {
+    .restaurant-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 100%;
+    }
+
+    .detail-flex {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+}
