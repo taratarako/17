@@ -184,5 +184,14 @@ footer {
         white-space: nowrap;
         font-family: 'Cherry Bomb One', cursive;
     }
+    .header-logo {
+        font-size: 0; /* 元のテキストを非表示 */
+    }
+    
+    .header-logo::before {
+        content: "名城ランチ";
+        font-size: 1.5rem; /* お好みのサイズに調整 */
+        font-family: inherit;
+    }
 
 }
