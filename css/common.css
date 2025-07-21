@@ -32,7 +32,6 @@ header {
 }
 
 .first-view {
-    height: 250px;
     /* もともとのグラデーションの背景指定をコメントアウト */
     /* background: linear-gradient(120deg, #3498db 0%, #8e44ad 100%); */
 

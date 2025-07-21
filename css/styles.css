@@ -1,3 +1,20 @@
+
+
+.first-view {
+    height: 600px;
+}
+
+.list {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.list-text {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 .restaurant-grid {
     display: flex;
     justify-content: center;
