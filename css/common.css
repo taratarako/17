@@ -168,16 +168,18 @@ footer {
     }
 
     .map {
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     max-width: 100%;
+    flex-direction: column;
+    gap: 5px
     }
 
     .detail-flex {
         flex-direction: column;
-        gap: 0px;
+        gap: 5px;
     }
 
     .site-menu a {
